@@ -20,7 +20,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout:
-          path: ~/
+          path: ~/project/
       - node/install:
           node-version: '20.9'
       - run: node --version
@@ -47,4 +47,3 @@ workflows:
             branches:
               only:
                 - main
-                - demo
