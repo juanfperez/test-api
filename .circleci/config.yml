@@ -43,7 +43,6 @@ workflows:
   deploy_pipeline:
     jobs:
       - deploy_app_to_railway:
-          requires:
           filters:
             branches:
               only:
