@@ -28,7 +28,9 @@ jobs:
       - run:
           name: Deploy to Railway App
           command: |
-            cd bankchurn-api && railway service "sole-machine" && railway up --detach
+            cd bankchurn-api 
+            railway link 47da959e-2a90-4b63-b2f9-fd3a3aa5eda9 410631f3-4938-4fbd-a864-35b2cf2bf174 
+            railway up --detach
 
 
 tags_only: &tags_only
